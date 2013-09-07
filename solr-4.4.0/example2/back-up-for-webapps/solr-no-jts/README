@@ -1,0 +1,5 @@
+The war file in this directory has been recreated to add the jts library for geospatial support:
+to recreate the war with jts, cd into solr-4.4.0 and run the command:
+jar -cvf solr-4.4.0.war *
+
+Note: added acme.jar, jts-1.13.jar, jdom.jar, and jtsio-1.13.jar from the downloaded JTS lib/ folder
