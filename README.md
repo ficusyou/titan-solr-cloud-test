@@ -72,7 +72,7 @@ drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 solr-webapp
 -rwxr-xr-x  1 jholmberg jholmberg    75 Sep  7 11:34 start_replica.sh
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 webapps
 ```
-1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries to support that in search queries.  Also, this assumes you have Java installed and its home directory in your path so that the **java** command can be run from the shell. Before running solr, you'll need to tell it Run the following script at the shell to start up Solr.
+1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries to support that in search queries.  Also, this assumes you have Java installed and its home directory in your path so that the **java** command can be run from the shell. Run the following script at the shell to start up Solr.
 ```bash
 ./run_solr_http.sh
 ```
