@@ -25,7 +25,7 @@ Step 2: Run Solr
 
 Based on the mode you wish to execute, read the instructions under the following subheadings. In either case, the repo has been configured to use the Solr schemas needed to support the integration tests.
 
-Set Up HTTP Solr Server
+Option 1: Set Up HTTP Solr Server
 -----------------------
 Running HTTP Solr Server is the most straightforward option and is a good choice for development. Since the APIs between HTTP Solr Server and Solr Cloud are the same, your code should work the same. To set up the HTTP Solr Server:
 1. Make sure you've cloned the git repo and changed directories into the solr-4.4.0 example folder and list the directory.
@@ -82,7 +82,7 @@ You should see the embedded Jetty client start up and log to the console.
 
 ![A Screenshot of the Solr Admin Page](/media/solr_admin_screenshot.png "A Screenshot of the Solr Admin Page")
 
-Set Up Solr Cloud
+Option 2: Set Up Solr Cloud
 -----------------
 Solr Cloud has a few more moving parts than the standard HTTP Solr Server since its geared for running a cluster of machines and doing replication between nodes to allow you to spread index storage across them. Regardless of the size of the cluster you choose to create, Solr Cloud requires at least one instance of Apache Zookeeper to be running. Solr 4.4.0 ships with an embedded version of Zookeeper. In this project, we ship a separate instance as this is just as easy to set up and aligns more closely with a production deployment. 
 
@@ -108,3 +108,16 @@ drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store2
 drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store3
 ```
 Each index (or core as Solr calls them) reside in their own directory in store, store1, store2, and store3, respectively.
+
+Okay, let's start up Zookeeper first since that's where Solr will look to get its configuration info. The version of Zookeeper that ships with this project has been preloaded with the appropriate configs to work out of the box.
+
+From the root directory of the project, change directories into zookeeper-3.3.5 and run the zkServer.sh script:
+
+```bash
+cd zookeeper-3.3.5
+bin/zkServer.sh start
+JMX enabled by default
+Using config: /home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED
+```
+If everything worked, you should see the last line of output say "Starting zookeeper ... STARTED" like the output above.
