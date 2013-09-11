@@ -1,7 +1,7 @@
 Overview
 =========
 
-The Solr Full-Text Index provider is a new addition to the set of supported indices backing the [*Titan Graph Database*](http://thinkaurelius.github.io/titan/).  Solr is a full-fledged Apache project that uses the Lucene indexing engine and is comparable to ElasticSearch. Solr is a highly performant, and tunable index.  Solr can run in 3 different modes: 
+The Solr Full-Text Index provider is a new addition to the set of supported indices backing the [*Titan Graph Database*](http://thinkaurelius.github.io/titan/).  Solr is a full-fledged Apache project that uses the Lucene indexing engine and is comparable to ElasticSearch. Solr is a highly performant, and tunable index. One of the biggest differences between Solr and ElasticSearch has to do with how data types are defined in their respective settings. Unlike ElasticSearch, Solr requires you to define a schema in a file called schema.xml, before you can create the index. Though this may have some run-time disadvantages to ElasticSearch, Solr has fined grained control over the data types within its schema. Solr can run in 3 different modes: 
 * __Embedded Mode__ - Executes Solr within the same JVM. The provider is coded to support this but this feature has not been extensively testsed.
 * __HTTP Solr Server__ - This has been the traditional mode of Solr execution until version 4.0 was released. It runs Solr as a java web application supporting the Solr Query API using RESTful style queries or the Java based SolrJ API.
 * __Cloud Mode__ - Since version 4.0 was released, Solr has added capabilities to run in a cluster or "cloud" with the ability to replicate Solr indices (or cores) across nodes in a cluster. It accomplishes this by leveraging Apache Zookeeper to distribute configuration and enable participating nodes to replicate index data. The advantage of this capability is that it adds redundancy and greater availability of Solr to applications and is encouraged for enterprise deployments.
@@ -72,12 +72,39 @@ drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 solr-webapp
 -rwxr-xr-x  1 jholmberg jholmberg    75 Sep  7 11:34 start_replica.sh
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 webapps
 ```
-1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries for queries.  Also, it is assumed you have Java 6 or higher installed and its home directory in your path so that the **java** command can be run from the shell. To start in HTTP mode, run the following script at the shell.
+1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries for queries.  Also, it is assumed you have Java 6 or higher installed and its home directory in your path so that the **java** command can be run from the shell. To start in HTTP mode, run the following script at the shelL.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 ```bash
 ./run_solr_http.sh
 ```
 You should see the embedded Jetty client start up and log to the console.
-1. You can make sure Solr is running by going to the Solr Admin page at http://localhost:8983/solr/#/ that looks something like this:
+1. You can make sure Solr is running by going to the Solr Admin page at [http://localhost:8983/solr/#/](http://localhost:8983/solr/#/). It should look something like this:
 
 ![A Screenshot of the Solr Admin Page](/media/solr_admin_screenshot.png "A Screenshot of the Solr Admin Page")
+
+Set Up Solr Cloud
+-----------------
+Solr Cloud has a few more moving parts than the standard HTTP Solr Server since its geared for running a cluster of machines and doing replication between nodes to allow you to spread index storage across them. Regardless of the size of the cluster you choose to create, Solr Cloud requires at least one instance of Apache Zookeeper to be running. Solr 4.4.0 ships with an embedded version of Zookeeper. In this project, we ship a separate instance as this is just as easy to set up and aligns more closely with a production deployment. 
+
+This project has been set up to run a single instance of Zookeeper with 2 Solr nodes replicating 4 indexes between them. 
+
+The index names in this project mirror the ones referred to IndexProviderTest class found in the the titan source code under the titan-test project. 
+
+You can find the indexes by listing the following directory from the root of the project:
+
+```bash
+cd solr-4.4.0/example/solr
+ls -la
+total 40
+drwxr-xr-x  8 jholmberg jholmberg 4096 Sep  7 11:34 .
+drwxr-xr-x 18 jholmberg jholmberg 4096 Sep  7 15:37 ..
+-rw-r--r--  1 jholmberg jholmberg 2473 Sep  7 11:34 README.txt
+drwxr-xr-x  2 jholmberg jholmberg 4096 Sep  7 11:34 bin
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 collection1
+-rw-r--r--  1 jholmberg jholmberg 1754 Sep  7 11:34 solr.xml
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store1
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store2
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store3
+```
+Each index (or core as Solr calls them) reside in their own directory in store, store1, store2, and store3, respectively.
