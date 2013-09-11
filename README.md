@@ -1,10 +1,10 @@
 Overview
 =========
 
-The Solr Full-Text Index provider is a new addition to the set of supported indices backing the [*Titan Graph Database*](http://thinkaurelius.github.io/titan/).  Solr can run in 3 different modes: 
+The Solr Full-Text Index provider is a new addition to the set of supported indices backing the [*Titan Graph Database*](http://thinkaurelius.github.io/titan/).  Solr is a full-fledged Apache project that uses the Lucene indexing engine and is comparable to ElasticSearch. Solr is a highly performant, and tunable index.  Solr can run in 3 different modes: 
 * __Embedded Mode__ - Executes Solr within the same JVM. The provider is coded to support this but this feature has not been extensively testsed.
-* __HTTP Solr Server__ - This has been the traditional version of Solr until version 4.0 was release. It executes Solr as a java web application supporting the Solr Query API using RESTful style queries or the Java based SolrJ API.
-* __Cloud Mode__ - Since version 4.0 was release, Solr has added capabilities to run in a cluster or "cloud" with the ability to replicate Solr indices (or cores) across nodes in a cluster. It accomplishes this by leveraging Apache Zookeeper to distribute configuration and enable participating nodes to replicate index data. The advantage of this capability is that it adds redundancy and greater availability of Solr to applications and is encourages for enterprise deployments.
+* __HTTP Solr Server__ - This has been the traditional mode of Solr execution until version 4.0 was released. It runs Solr as a java web application supporting the Solr Query API using RESTful style queries or the Java based SolrJ API.
+* __Cloud Mode__ - Since version 4.0 was released, Solr has added capabilities to run in a cluster or "cloud" with the ability to replicate Solr indices (or cores) across nodes in a cluster. It accomplishes this by leveraging Apache Zookeeper to distribute configuration and enable participating nodes to replicate index data. The advantage of this capability is that it adds redundancy and greater availability of Solr to applications and is encouraged for enterprise deployments.
 
 Supported Modes
 ===============
@@ -33,7 +33,7 @@ Running HTTP Solr Server is the most straightforward option and is a good choice
 cd titan-solr-cloud-test/example
 ls -la
 total 196
-drwxr-xr-x 18 jholmberg jholmberg  4096 Sep  7 15:37 .
+drwxr-xr-x 18 jholmberg jholmberg  4096 Sep  7 11:34 .
 drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 ..
 -rw-------  1 jholmberg jholmberg    59 Sep  7 11:34 .directory
 -rwxr-xr-x  1 jholmberg jholmberg   101 Sep  7 11:34 1-upload_collection1_to_zk.sh
@@ -58,21 +58,21 @@ drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 example-schemaless
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 exampledocs
 -rw-r--r--  1 jholmberg jholmberg   208 Sep  7 11:34 input1.csv
 drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 lib
-drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 16:10 logs
+drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 logs
 drwxr-xr-x  5 jholmberg jholmberg  4096 Sep  7 11:34 multicore
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 resources
--rwx------  1 jholmberg jholmberg   186 Sep  7 15:41 run_solr_http.sh
 drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 solr
 -rwxr-xr-x  1 jholmberg jholmberg   143 Sep  7 11:34 solr-titan-cloud1.sh
 -rwxr-xr-x  1 jholmberg jholmberg    72 Sep  7 11:34 solr-titan-cloud2.sh
 drwxr-xr-x  6 jholmberg jholmberg  4096 Sep  7 11:34 solr-titan-test
+-rwx------  1 jholmberg jholmberg   212 Sep  7 11:34 solr-titan-test.sh
 drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 solr-webapp
 -rw-r--r--  1 jholmberg jholmberg 46294 Sep  7 11:34 start.jar
 -rwxr-xr-x  1 jholmberg jholmberg    70 Sep  7 11:34 start_master.sh
 -rwxr-xr-x  1 jholmberg jholmberg    75 Sep  7 11:34 start_replica.sh
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 webapps
 ```
-1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries to support that in search queries.  Also, this assumes you have Java installed and its home directory in your path so that the **java** command can be run from the shell. Run the following script at the shell to start up Solr.
+1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries for queries.  Also, it is assumed you have Java 6 or higher installed and its home directory in your path so that the **java** command can be run from the shell. To start Solr in HTTP mode, run the following script at the shell to start up Solr.
 ```bash
 ./run_solr_http.sh
 ```
