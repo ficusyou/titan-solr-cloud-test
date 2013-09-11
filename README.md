@@ -121,3 +121,11 @@ Using config: /home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin
 Starting zookeeper ... STARTED
 ```
 If everything worked, you should see the last line of output say "Starting zookeeper ... STARTED" like the output above.
+
+Now that Zookeeper is running, let's start up our first instance of Solr. Change directories back into the root of the project and run the following commands:
+
+```bash
+cd solr-4.4.0/example
+./start_master.sh
+
+```
