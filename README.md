@@ -147,3 +147,5 @@ Notice that this runs from the example2 directory. If you start the replica up a
 Now that we have a "cloud" of 2 instances of Solr running, you can confirm that its all working by going back to the Solr Admin web app in your browser at: [http://localhost:8983/solr](http://localhost:8989/solr). Click on the Cloud link in the navigation on the left and you should see a depiction of your 2 instances of solr and the indexes being replicated across the 2 nodes.
 
 ![A Screenshot of the Solr Admin Cloud Configuration](/media/solr_admin_cloud_screenshot.png "A Screenshot of the Solr Admin Cloud Configuration")
+
+That's it! You should be set to run the unit tests in Titan on Solr now!
