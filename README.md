@@ -32,8 +32,8 @@ Running HTTP Solr Server is the most straightforward option and is a good choice
 ```bash
 cd titan-solr-cloud-test/example
 ls -la
-total 196
-drwxr-xr-x 18 jholmberg jholmberg  4096 Sep  7 11:34 .
+total 188
+drwxr-xr-x 18 jholmberg jholmberg  4096 Sep 12 18:01 .
 drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 ..
 -rw-------  1 jholmberg jholmberg    59 Sep  7 11:34 .directory
 -rwxr-xr-x  1 jholmberg jholmberg   101 Sep  7 11:34 1-upload_collection1_to_zk.sh
@@ -51,26 +51,24 @@ drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 ..
 drwxr-xr-x  4 jholmberg jholmberg  4096 Sep  7 11:34 SOLR-INDEXING
 drwxr-xr-x  4 jholmberg jholmberg  4096 Sep  7 11:34 back-up-for-webapps
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 cloud-scripts
+-rwxr-xr-x  1 jholmberg jholmberg   509 Sep 12 18:01 configure_zookeeper.sh
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 contexts
 drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 etc
 drwxr-xr-x  4 jholmberg jholmberg  4096 Sep  7 11:34 example-DIH
 drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 example-schemaless
-drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 exampledocs
--rw-r--r--  1 jholmberg jholmberg   208 Sep  7 11:34 input1.csv
-drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 lib
-drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 logs
-drwxr-xr-x  5 jholmberg jholmberg  4096 Sep  7 11:34 multicore
-drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 resources
-drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 solr
--rwxr-xr-x  1 jholmberg jholmberg   143 Sep  7 11:34 solr-titan-cloud1.sh
--rwxr-xr-x  1 jholmberg jholmberg    72 Sep  7 11:34 solr-titan-cloud2.sh
-drwxr-xr-x  6 jholmberg jholmberg  4096 Sep  7 11:34 solr-titan-test
--rwx------  1 jholmberg jholmberg   212 Sep  7 11:34 solr-titan-test.sh
-drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 solr-webapp
--rw-r--r--  1 jholmberg jholmberg 46294 Sep  7 11:34 start.jar
--rwxr-xr-x  1 jholmberg jholmberg    70 Sep  7 11:34 start_master.sh
--rwxr-xr-x  1 jholmberg jholmberg    75 Sep  7 11:34 start_replica.sh
-drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 webapps
+drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 exampledocs                                                     
+-rw-r--r--  1 jholmberg jholmberg   208 Sep  7 11:34 input1.csv                                                      
+drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 lib                                                             
+drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 16:10 logs                                                            
+drwxr-xr-x  5 jholmberg jholmberg  4096 Sep  7 11:34 multicore                                                       
+drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 resources                                                       
+-rwxr-xr-x  1 jholmberg jholmberg    70 Sep  7 11:34 run_master_cloud.sh                                             
+-rwx------  1 jholmberg jholmberg   186 Sep  7 15:41 run_solr_http.sh                                                
+drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 solr                                                            
+drwxr-xr-x  6 jholmberg jholmberg  4096 Sep  7 11:34 solr-titan-test                                                 
+drwxr-xr-x  3 jholmberg jholmberg  4096 Sep  7 11:34 solr-webapp                                                     
+-rw-r--r--  1 jholmberg jholmberg 46294 Sep  7 11:34 start.jar                                                       
+drwxr-xr-x  2 jholmberg jholmberg  4096 Sep  7 11:34 webapps 
 ```
 1. The titan based integration tests assume that the Full-Text Index and its corresponding provider support geospatial queries. Solr supports geospatial but requires that additional libraries be added to the class path in Java at run time in order to work correctly. The version of solr that is in this project has been modified to include the appropriate Geospatial libraries for queries.  Also, it is assumed you have Java 6 or higher installed and its home directory in your path so that the **java** command can be run from the shell. To start in HTTP mode, run the following script at the shelL.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
@@ -109,7 +107,7 @@ drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store3
 ```
 Each index (or core as Solr calls them) reside in their own directory in store, store1, store2, and store3, respectively.
 
-Okay, let's start up Zookeeper first since that's where Solr will look to get its configuration info. The version of Zookeeper that ships with this project has been preloaded with the appropriate configs to work out of the box.
+Okay, let's start up Zookeeper first since that's where Solr will look to get its configuration info. 
 
 From the root directory of the project, change directories into zookeeper-3.3.5 and run the zkServer.sh script:
 
@@ -122,10 +120,30 @@ Starting zookeeper ... STARTED
 ```
 If everything worked, you should see the last line of output say "Starting zookeeper ... STARTED" like the output above.
 
-Now that Zookeeper is running, let's start up our first instance of Solr. Change directories back into the root of the project and run the following commands:
+Now that Zookeeper is running, we need to upload the schemas and configuration that Solr needs. To do that, go back to the project root directory and run the following commands at the shell:
 
 ```bash
 cd solr-4.4.0/example
-./start_master.sh
-
+./configure_zookeeper.sh
 ```
+
+Next, let's start up our first instance of Solr. Change directories back into the root of the project and run the following commands:
+
+```bash
+cd solr-4.4.0/example
+./run_master_cloud.sh
+```
+
+This should start up the embedded instance of Jetty that ships with Solr and will log output to the console. 
+
+Now open up a new shell to the root of the project again and run the following commands:
+
+```bash
+cd solr-4.4.0/example2
+./run_replica_cloud.sh
+```
+Notice that this runs from the example2 directory. If you start the replica up and notice weird errors about timeouts and locked files, that's probably because both the first and second instances of Solr are running in the same directory. This can cause deadlocking issues preventing you from being able to write anything to Solr.
+
+Now that we have a "cloud" of 2 instances of Solr running, you can confirm that its all working by going back to the Solr Admin web app in your browser at: [http://localhost:8983/solr](http://localhost:8989/solr). Click on the Cloud link in the navigation on the left and you should see a depiction of your 2 instances of solr and the indexes being replicated across the 2 nodes.
+
+![A Screenshot of the Solr Admin Cloud Configuration](/media/solr_admin_screenshot.png "A Screenshot of the Solr Admin Cloud Configuration")

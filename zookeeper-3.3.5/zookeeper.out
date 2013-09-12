@@ -1,32 +1,138 @@
-2013-09-10 21:56:22,050 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf/zoo.cfg
-2013-09-10 21:56:22,052 - WARN  [main:QuorumPeerMain@105] - Either no config or no quorum defined in config, running  in standalone mode
-2013-09-10 21:56:22,060 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf/zoo.cfg
-2013-09-10 21:56:22,061 - INFO  [main:ZooKeeperServerMain@94] - Starting server
-2013-09-10 21:56:22,065 - INFO  [main:Environment@97] - Server environment:zookeeper.version=3.3.5-1301095, built on 03/15/2012 19:48 GMT
-2013-09-10 21:56:22,065 - INFO  [main:Environment@97] - Server environment:host.name=localhost
-2013-09-10 21:56:22,065 - INFO  [main:Environment@97] - Server environment:java.version=1.7.0_25
-2013-09-10 21:56:22,066 - INFO  [main:Environment@97] - Server environment:java.vendor=Oracle Corporation
-2013-09-10 21:56:22,066 - INFO  [main:Environment@97] - Server environment:java.home=/home/jholmberg/apps/jdk/jre
-2013-09-10 21:56:22,066 - INFO  [main:Environment@97] - Server environment:java.class.path=/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../build/classes:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../build/lib/*.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../zookeeper-3.3.5.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../lib/log4j-1.2.15.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../lib/jline-0.9.94.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../src/java/lib/*.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf:
-2013-09-10 21:56:22,067 - INFO  [main:Environment@97] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
-2013-09-10 21:56:22,067 - INFO  [main:Environment@97] - Server environment:java.io.tmpdir=/tmp
-2013-09-10 21:56:22,067 - INFO  [main:Environment@97] - Server environment:java.compiler=<NA>
-2013-09-10 21:56:22,068 - INFO  [main:Environment@97] - Server environment:os.name=Linux
-2013-09-10 21:56:22,068 - INFO  [main:Environment@97] - Server environment:os.arch=amd64
-2013-09-10 21:56:22,068 - INFO  [main:Environment@97] - Server environment:os.version=3.10.10-1-ARCH
-2013-09-10 21:56:22,069 - INFO  [main:Environment@97] - Server environment:user.name=jholmberg
-2013-09-10 21:56:22,069 - INFO  [main:Environment@97] - Server environment:user.home=/home/jholmberg
-2013-09-10 21:56:22,069 - INFO  [main:Environment@97] - Server environment:user.dir=/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5
-2013-09-10 21:56:22,074 - INFO  [main:ZooKeeperServer@673] - tickTime set to 2000
-2013-09-10 21:56:22,074 - INFO  [main:ZooKeeperServer@682] - minSessionTimeout set to -1
-2013-09-10 21:56:22,074 - INFO  [main:ZooKeeperServer@691] - maxSessionTimeout set to -1
-2013-09-10 21:56:22,086 - INFO  [main:NIOServerCnxn$Factory@143] - binding to port 0.0.0.0/0.0.0.0:2181
-2013-09-10 21:56:22,087 - FATAL [main:ZooKeeperServerMain@62] - Unexpected e2013-09-10 21:56:35,246 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41875
-2013-09-10 21:56:35,248 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1237] - Processing srvr command from /127.0.0.1:41875
-2013-09-10 21:56:35,250 - INFO  [Thread-1:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41875 (no session established for client)
-Cnxn$Factory.<init>(NIOServerCnxn.java:144)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:108)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:85)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:51)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:108)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:76)
+2013-09-12 17:48:12,729 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf/zoo.cfg
+2013-09-12 17:48:12,732 - WARN  [main:QuorumPeerMain@105] - Either no config or no quorum defined in config, running  in standalone mode
+2013-09-12 17:48:12,744 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf/zoo.cfg
+2013-09-12 17:48:12,744 - INFO  [main:ZooKeeperServerMain@94] - Starting server
+2013-09-12 17:48:12,750 - INFO  [main:Environment@97] - Server environment:zookeeper.version=3.3.5-1301095, built on 03/15/2012 19:48 GMT
+2013-09-12 17:48:12,750 - INFO  [main:Environment@97] - Server environment:host.name=localhost
+2013-09-12 17:48:12,750 - INFO  [main:Environment@97] - Server environment:java.version=1.7.0_25
+2013-09-12 17:48:12,751 - INFO  [main:Environment@97] - Server environment:java.vendor=Oracle Corporation
+2013-09-12 17:48:12,751 - INFO  [main:Environment@97] - Server environment:java.home=/home/jholmberg/apps/jdk/jre
+2013-09-12 17:48:12,751 - INFO  [main:Environment@97] - Server environment:java.class.path=/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../build/classes:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../build/lib/*.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../zookeeper-3.3.5.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../lib/log4j-1.2.15.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../lib/jline-0.9.94.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../src/java/lib/*.jar:/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5/bin/../conf:
+2013-09-12 17:48:12,752 - INFO  [main:Environment@97] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2013-09-12 17:48:12,752 - INFO  [main:Environment@97] - Server environment:java.io.tmpdir=/tmp
+2013-09-12 17:48:12,752 - INFO  [main:Environment@97] - Server environment:java.compiler=<NA>
+2013-09-12 17:48:12,753 - INFO  [main:Environment@97] - Server environment:os.name=Linux
+2013-09-12 17:48:12,753 - INFO  [main:Environment@97] - Server environment:os.arch=amd64
+2013-09-12 17:48:12,753 - INFO  [main:Environment@97] - Server environment:os.version=3.10.10-1-ARCH
+2013-09-12 17:48:12,754 - INFO  [main:Environment@97] - Server environment:user.name=jholmberg
+2013-09-12 17:48:12,754 - INFO  [main:Environment@97] - Server environment:user.home=/home/jholmberg
+2013-09-12 17:48:12,754 - INFO  [main:Environment@97] - Server environment:user.dir=/home/jholmberg/Projects/titan-solr-cloud-test/zookeeper-3.3.5
+2013-09-12 17:48:12,761 - INFO  [main:ZooKeeperServer@673] - tickTime set to 2000
+2013-09-12 17:48:12,761 - INFO  [main:ZooKeeperServer@682] - minSessionTimeout set to -1
+2013-09-12 17:48:12,761 - INFO  [main:ZooKeeperServer@691] - maxSessionTimeout set to -1
+2013-09-12 17:48:12,775 - INFO  [main:NIOServerCnxn$Factory@143] - binding to port 0.0.0.0/0.0.0.0:2181
+2013-09-12 17:48:12,785 - INFO  [main:FileTxnSnapLog@254] - Snapshotting: 0
+2013-09-12 17:55:20,600 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41271
+2013-09-12 17:55:20,604 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41271
+2013-09-12 17:55:20,606 - INFO  [SyncThread:0:FileTxnLog@199] - Creating new log file: log.1
+2013-09-12 17:55:20,617 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750000 with negotiated timeout 15000 for client /127.0.0.1:41271
+2013-09-12 17:55:20,645 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:create cxid:0x7 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:55:20,664 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:delete cxid:0x12 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/live_nodes/192.168.1.4:8983_solr Error:KeeperErrorCode = NoNode for /live_nodes/192.168.1.4:8983_solr
+2013-09-12 17:55:20,693 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:delete cxid:0x23 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer_elect/leader Error:KeeperErrorCode = NoNode for /overseer_elect/leader
+2013-09-12 17:55:20,702 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:create cxid:0x28 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:55:20,707 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:create cxid:0x29 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:55:20,710 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:create cxid:0x2b zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:55:20,721 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750000 type:create cxid:0x31 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:56:46,998 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41276
+2013-09-12 17:56:47,000 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41276
+2013-09-12 17:56:47,004 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750001 with negotiated timeout 15000 for client /127.0.0.1:41276
+2013-09-12 17:56:47,011 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750001 type:create cxid:0x1 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:56:47,021 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750001 type:create cxid:0x3 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 17:56:48,047 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x141142554750001 type:delete cxid:0xe zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/live_nodes/192.168.1.4:7574_solr Error:KeeperErrorCode = NoNode for /live_nodes/192.168.1.4:7574_solr
+2013-09-12 17:57:10,625 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750000
+2013-09-12 17:57:10,632 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41271 which had sessionid 0x141142554750000
+2013-09-12 17:57:10,641 - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@639] - Exception causing close of session 0x141142554750001 due to java.io.IOException: Connection reset by peer
+2013-09-12 17:57:10,642 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41276 which had sessionid 0x141142554750001
+2013-09-12 17:57:24,000 - INFO  [SessionTracker:ZooKeeperServer@316] - Expiring session 0x141142554750001, timeout of 15000ms exceeded
+2013-09-12 17:57:24,001 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750001
+2013-09-12 18:02:04,801 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41280
+2013-09-12 18:02:04,803 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41280
+2013-09-12 18:02:04,808 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750002 with negotiated timeout 30000 for client /127.0.0.1:41280
+2013-09-12 18:02:05,637 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750002
+2013-09-12 18:02:05,641 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41280 which had sessionid 0x141142554750002
+2013-09-12 18:02:05,830 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41281
+2013-09-12 18:02:05,833 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41281
+2013-09-12 18:02:05,837 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750003 with negotiated timeout 30000 for client /127.0.0.1:41281
+2013-09-12 18:02:05,869 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750003
+2013-09-12 18:02:05,873 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41281 which had sessionid 0x141142554750003
+2013-09-12 18:02:06,064 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41282
+2013-09-12 18:02:06,068 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41282
+2013-09-12 18:02:06,071 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750004 with negotiated timeout 30000 for client /127.0.0.1:41282
+2013-09-12 18:02:06,155 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750004
+2013-09-12 18:02:06,160 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41282 which had sessionid 0x141142554750004
+2013-09-12 18:02:06,354 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41283
+2013-09-12 18:02:06,356 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41283
+2013-09-12 18:02:06,362 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750005 with negotiated timeout 30000 for client /127.0.0.1:41283
+2013-09-12 18:02:06,395 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750005
+2013-09-12 18:02:06,400 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41283 which had sessionid 0x141142554750005
+2013-09-12 18:02:06,591 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41284
+2013-09-12 18:02:06,593 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41284
+2013-09-12 18:02:06,598 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750006 with negotiated timeout 30000 for client /127.0.0.1:41284
+2013-09-12 18:02:06,693 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750006
+2013-09-12 18:02:06,698 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41284 which had sessionid 0x141142554750006
+2013-09-12 18:02:06,886 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41285
+2013-09-12 18:02:06,888 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41285
+2013-09-12 18:02:06,893 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750007 with negotiated timeout 30000 for client /127.0.0.1:41285
+2013-09-12 18:02:06,972 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750007
+2013-09-12 18:02:06,975 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41285 which had sessionid 0x141142554750007
+2013-09-12 18:02:07,164 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41286
+2013-09-12 18:02:07,166 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41286
+2013-09-12 18:02:07,170 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750008 with negotiated timeout 30000 for client /127.0.0.1:41286
+2013-09-12 18:02:07,249 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750008
+2013-09-12 18:02:07,252 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41286 which had sessionid 0x141142554750008
+2013-09-12 18:02:07,443 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41287
+2013-09-12 18:02:07,445 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41287
+2013-09-12 18:02:07,449 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x141142554750009 with negotiated timeout 30000 for client /127.0.0.1:41287
+2013-09-12 18:02:07,518 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x141142554750009
+2013-09-12 18:02:07,520 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41287 which had sessionid 0x141142554750009
+2013-09-12 18:02:07,708 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41288
+2013-09-12 18:02:07,711 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41288
+2013-09-12 18:02:07,713 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x14114255475000a with negotiated timeout 30000 for client /127.0.0.1:41288
+2013-09-12 18:02:07,781 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x14114255475000a
+2013-09-12 18:02:07,784 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41288 which had sessionid 0x14114255475000a
+2013-09-12 18:02:07,979 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41289
+2013-09-12 18:02:07,982 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41289
+2013-09-12 18:02:07,984 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x14114255475000b with negotiated timeout 30000 for client /127.0.0.1:41289
+2013-09-12 18:02:08,046 - INFO  [ProcessThread:-1:PrepRequestProcessor@399] - Processed session termination for sessionid: 0x14114255475000b
+2013-09-12 18:02:08,048 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1435] - Closed socket connection for client /127.0.0.1:41289 which had sessionid 0x14114255475000b
+2013-09-12 18:02:30,415 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41290
+2013-09-12 18:02:30,417 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41290
+2013-09-12 18:02:30,422 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x14114255475000c with negotiated timeout 15000 for client /127.0.0.1:41290
+2013-09-12 18:02:30,429 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x1 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:30,440 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x3 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:31,471 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0xe zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/live_nodes/192.168.1.4:8983_solr Error:KeeperErrorCode = NoNode for /live_nodes/192.168.1.4:8983_solr
+2013-09-12 18:02:31,500 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0x18 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer_elect/leader Error:KeeperErrorCode = NoNode for /overseer_elect/leader
+2013-09-12 18:02:31,517 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x1d zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:31,525 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x1e zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:31,532 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x20 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:31,543 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x22 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:34,429 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0xd2 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store1/leaders Error:KeeperErrorCode = NoNode for /collections/store1/leaders
+2013-09-12 18:02:34,430 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0xd3 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store2/leaders Error:KeeperErrorCode = NoNode for /collections/store2/leaders
+2013-09-12 18:02:34,430 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0xd4 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store3/leaders Error:KeeperErrorCode = NoNode for /collections/store3/leaders
+2013-09-12 18:02:34,433 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0xd5 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:34,436 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0xd6 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:34,436 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0xd7 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:34,466 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0xf6 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:34,466 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0xf7 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:34,466 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0xf8 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:37,040 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0x1ab zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store/leaders Error:KeeperErrorCode = NoNode for /collections/store/leaders
+2013-09-12 18:02:37,044 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x1ac zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:37,064 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x1b7 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:37,559 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:delete cxid:0x23c zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/collection1/leaders Error:KeeperErrorCode = NoNode for /collections/collection1/leaders
+2013-09-12 18:02:37,563 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x23d zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:38,084 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000c type:create cxid:0x26f zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:51,603 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn$Factory@251] - Accepted socket connection from /127.0.0.1:41291
+2013-09-12 18:02:51,605 - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@777] - Client attempting to establish new session at /127.0.0.1:41291
+2013-09-12 18:02:51,609 - INFO  [SyncThread:0:NIOServerCnxn@1580] - Established session 0x14114255475000d with negotiated timeout 15000 for client /127.0.0.1:41291
+2013-09-12 18:02:51,616 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0x1 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:51,626 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0x3 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:52,654 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:delete cxid:0xe zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/live_nodes/192.168.1.4:7574_solr Error:KeeperErrorCode = NoNode for /live_nodes/192.168.1.4:7574_solr
+2013-09-12 18:02:54,534 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:delete cxid:0x89 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store1/leaders/shard2 Error:KeeperErrorCode = NoNode for /collections/store1/leaders/shard2
+2013-09-12 18:02:54,535 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:delete cxid:0x8b zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store3/leaders/shard2 Error:KeeperErrorCode = NoNode for /collections/store3/leaders/shard2
+2013-09-12 18:02:54,538 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:delete cxid:0x8c zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/collections/store2/leaders/shard2 Error:KeeperErrorCode = NoNode for /collections/store2/leaders/shard2
+2013-09-12 18:02:54,538 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0x8d zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:54,541 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0x8e zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:54,544 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0x90 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:54,570 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0xa3 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:54,585 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0xaf zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer
+2013-09-12 18:02:54,589 - INFO  [ProcessThread:-1:PrepRequestProcessor@419] - Got user-level KeeperException when processing sessionid:0x14114255475000d type:create cxid:0xb0 zxid:0xfffffffffffffffe txntype:unknown reqpath:n/a Error Path:/overseer Error:KeeperErrorCode = NodeExists for /overseer

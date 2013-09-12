@@ -34088,3 +34088,800 @@ INFO  - 2013-09-07 11:06:35.591; org.apache.solr.cloud.Overseer$ClusterStateUpda
   "node_name":"192.168.1.6:7574_solr",
   "base_url":"http://192.168.1.6:7574/solr"}
 INFO  - 2013-09-07 11:06:35.595; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/jholmberg/Projects/titan/titan-solr/solr-cloud-test/solr-4.4.0/example2/solr-webapp/webapp/},/home/jholmberg/Projects/titan/titan-solr/solr-cloud-test/solr-4.4.0/example2/webapps/solr.war
+INFO  - 2013-09-12 17:56:45.711; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2013-09-12 17:56:45.730; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/contexts at interval 0
+INFO  - 2013-09-12 17:56:45.734; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/contexts/solr-jetty-context.xml
+INFO  - 2013-09-12 17:56:46.632; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2013-09-12 17:56:46.660; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2013-09-12 17:56:46.675; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2013-09-12 17:56:46.676; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2013-09-12 17:56:46.676; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2013-09-12 17:56:46.765; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/solr.xml
+INFO  - 2013-09-12 17:56:46.839; org.apache.solr.core.SolrCoreDiscoverer; Looking for cores in /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr
+INFO  - 2013-09-12 17:56:46.840; org.apache.solr.core.SolrCoreDiscoverer; Looking for cores in /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/bin
+INFO  - 2013-09-12 17:56:46.840; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/core.properties, adding to cores
+INFO  - 2013-09-12 17:56:46.842; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/core.properties, adding to cores
+INFO  - 2013-09-12 17:56:46.843; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/core.properties, adding to cores
+INFO  - 2013-09-12 17:56:46.844; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/core.properties, adding to cores
+INFO  - 2013-09-12 17:56:46.845; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/core.properties, adding to cores
+INFO  - 2013-09-12 17:56:46.850; org.apache.solr.core.CoreContainer; New CoreContainer 1376663632
+INFO  - 2013-09-12 17:56:46.851; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2013-09-12 17:56:46.861; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2013-09-12 17:56:46.861; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - 2013-09-12 17:56:46.861; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2013-09-12 17:56:46.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2013-09-12 17:56:46.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2013-09-12 17:56:46.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2013-09-12 17:56:46.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2013-09-12 17:56:46.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2013-09-12 17:56:46.863; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2013-09-12 17:56:46.868; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2013-09-12 17:56:46.959; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2013-09-12 17:56:46.960; org.apache.solr.core.ZkContainer; Zookeeper client=127.0.0.1:2181
+INFO  - 2013-09-12 17:56:46.965; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=500&maxConnectionsPerHost=16&socketTimeout=0&connTimeout=0
+INFO  - 2013-09-12 17:56:46.992; org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+WARN  - 2013-09-12 17:56:47.006; org.apache.zookeeper.ClientCnxnSocket; Connected to an old server; r-o mode will be unavailable
+INFO  - 2013-09-12 17:56:47.007; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@52921439 name:ZooKeeperConnection Watcher:127.0.0.1:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2013-09-12 17:56:47.008; org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2013-09-12 17:56:47.030; org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2013-09-12 17:56:48.044; org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.1.4:7574_solr
+INFO  - 2013-09-12 17:56:48.052; org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.1.4:7574_solr
+INFO  - 2013-09-12 17:56:48.062; org.apache.solr.common.cloud.ZkStateReader$3; Updating live nodes... (2)
+INFO  - 2013-09-12 17:56:48.096; org.apache.solr.cloud.ZkController; publishing core=store3 state=down
+INFO  - 2013-09-12 17:56:48.097; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 17:56:48.097; org.apache.solr.cloud.ZkController; publishing core=store2 state=down
+INFO  - 2013-09-12 17:56:48.097; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 17:56:48.097; org.apache.solr.cloud.ZkController; publishing core=store1 state=down
+INFO  - 2013-09-12 17:56:48.098; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 17:56:48.106; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 17:56:48.111; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 17:56:48.111; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 17:56:48.329; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-12 17:56:49.106; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store2
+INFO  - 2013-09-12 17:56:49.106; org.apache.solr.core.CoreContainer; Creating SolrCore 'store2' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2
+INFO  - 2013-09-12 17:56:49.106; org.apache.solr.cloud.ZkController; Check for collection zkNode:store2
+INFO  - 2013-09-12 17:56:49.108; org.apache.solr.cloud.ZkController; Creating collection in ZooKeeper:store2
+INFO  - 2013-09-12 17:56:49.108; org.apache.solr.cloud.ZkController; Looking for collection configName
+INFO  - 2013-09-12 17:56:49.111; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 1
+INFO  - 2013-09-12 17:56:49.111; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store1
+INFO  - 2013-09-12 17:56:49.112; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store3
+INFO  - 2013-09-12 17:56:49.112; org.apache.solr.core.CoreContainer; Creating SolrCore 'store1' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1
+INFO  - 2013-09-12 17:56:49.112; org.apache.solr.core.CoreContainer; Creating SolrCore 'store3' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3
+INFO  - 2013-09-12 17:56:49.113; org.apache.solr.cloud.ZkController; Check for collection zkNode:store3
+INFO  - 2013-09-12 17:56:49.113; org.apache.solr.cloud.ZkController; Check for collection zkNode:store1
+INFO  - 2013-09-12 17:56:49.114; org.apache.solr.cloud.ZkController; Creating collection in ZooKeeper:store3
+INFO  - 2013-09-12 17:56:49.114; org.apache.solr.cloud.ZkController; Creating collection in ZooKeeper:store1
+INFO  - 2013-09-12 17:56:49.115; org.apache.solr.cloud.ZkController; Looking for collection configName
+INFO  - 2013-09-12 17:56:49.115; org.apache.solr.cloud.ZkController; Looking for collection configName
+INFO  - 2013-09-12 17:56:49.117; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 1
+INFO  - 2013-09-12 17:56:49.117; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 1
+INFO  - 2013-09-12 17:56:52.114; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 2
+INFO  - 2013-09-12 17:56:52.120; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 2
+INFO  - 2013-09-12 17:56:52.120; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 2
+INFO  - 2013-09-12 17:56:55.117; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 3
+INFO  - 2013-09-12 17:56:55.122; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 3
+INFO  - 2013-09-12 17:56:55.123; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 3
+INFO  - 2013-09-12 17:56:58.121; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 4
+INFO  - 2013-09-12 17:56:58.126; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 4
+INFO  - 2013-09-12 17:56:58.126; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 4
+INFO  - 2013-09-12 17:57:01.124; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 5
+INFO  - 2013-09-12 17:57:01.129; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 5
+INFO  - 2013-09-12 17:57:01.129; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 5
+ERROR - 2013-09-12 17:57:04.124; org.apache.solr.cloud.ZkController; Could not find configName for collection store2
+ERROR - 2013-09-12 17:57:04.128; org.apache.solr.core.CoreContainer; Unable to create core: store2
+org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection store2 found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1203)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1122)
+	at org.apache.solr.core.ZkContainer.createFromZk(ZkContainer.java:255)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:655)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:364)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:356)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+ERROR - 2013-09-12 17:57:04.129; org.apache.solr.cloud.ZkController; Could not find configName for collection store1
+ERROR - 2013-09-12 17:57:04.129; org.apache.solr.cloud.ZkController; Could not find configName for collection store3
+ERROR - 2013-09-12 17:57:04.133; org.apache.solr.core.CoreContainer; Unable to create core: store1
+org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection store1 found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1203)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1122)
+	at org.apache.solr.core.ZkContainer.createFromZk(ZkContainer.java:255)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:655)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:364)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:356)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+ERROR - 2013-09-12 17:57:04.133; org.apache.solr.core.CoreContainer; Unable to create core: store3
+org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection store3 found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1203)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1122)
+	at org.apache.solr.core.ZkContainer.createFromZk(ZkContainer.java:255)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:655)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:364)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:356)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+ERROR - 2013-09-12 17:57:04.138; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: store2
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1150)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:666)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:364)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:356)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection store2 found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1203)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1122)
+	at org.apache.solr.core.ZkContainer.createFromZk(ZkContainer.java:255)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:655)
+	... 10 more
+
+INFO  - 2013-09-12 17:57:04.140; org.apache.solr.cloud.ZkController; publishing core=store state=down
+INFO  - 2013-09-12 17:57:04.140; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+ERROR - 2013-09-12 17:57:04.142; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: store1
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1150)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:666)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:364)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:356)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection store1 found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1203)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1122)
+	at org.apache.solr.core.ZkContainer.createFromZk(ZkContainer.java:255)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:655)
+	... 10 more
+
+ERROR - 2013-09-12 17:57:04.142; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: store3
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1150)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:666)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:364)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:356)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection store3 found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1203)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1122)
+	at org.apache.solr.core.ZkContainer.createFromZk(ZkContainer.java:255)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:655)
+	... 10 more
+
+INFO  - 2013-09-12 17:57:04.143; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down
+INFO  - 2013-09-12 17:57:04.144; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 17:57:04.146; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 17:57:04.149; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 17:57:04.983; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-12 17:57:05.147; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store
+INFO  - 2013-09-12 17:57:05.147; org.apache.solr.core.CoreContainer; Creating SolrCore 'store' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store
+INFO  - 2013-09-12 17:57:05.147; org.apache.solr.cloud.ZkController; Check for collection zkNode:store
+INFO  - 2013-09-12 17:57:05.149; org.apache.solr.cloud.ZkController; Creating collection in ZooKeeper:store
+INFO  - 2013-09-12 17:57:05.149; org.apache.solr.cloud.ZkController; Looking for collection configName
+INFO  - 2013-09-12 17:57:05.150; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for collection1
+INFO  - 2013-09-12 17:57:05.150; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1
+INFO  - 2013-09-12 17:57:05.150; org.apache.solr.cloud.ZkController; Check for collection zkNode:collection1
+INFO  - 2013-09-12 17:57:05.151; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 1
+INFO  - 2013-09-12 17:57:05.152; org.apache.solr.cloud.ZkController; Creating collection in ZooKeeper:collection1
+INFO  - 2013-09-12 17:57:05.152; org.apache.solr.cloud.ZkController; Looking for collection configName
+INFO  - 2013-09-12 17:57:05.154; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 1
+INFO  - 2013-09-12 17:57:08.155; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 2
+INFO  - 2013-09-12 17:57:08.157; org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 2
+INFO  - 2013-09-12 18:02:50.373; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2013-09-12 18:02:50.390; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/contexts at interval 0
+INFO  - 2013-09-12 18:02:50.395; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/contexts/solr-jetty-context.xml
+INFO  - 2013-09-12 18:02:51.248; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2013-09-12 18:02:51.276; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2013-09-12 18:02:51.291; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2013-09-12 18:02:51.291; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2013-09-12 18:02:51.292; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2013-09-12 18:02:51.375; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/solr.xml
+INFO  - 2013-09-12 18:02:51.446; org.apache.solr.core.SolrCoreDiscoverer; Looking for cores in /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr
+INFO  - 2013-09-12 18:02:51.447; org.apache.solr.core.SolrCoreDiscoverer; Looking for cores in /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/bin
+INFO  - 2013-09-12 18:02:51.447; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/core.properties, adding to cores
+INFO  - 2013-09-12 18:02:51.448; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/core.properties, adding to cores
+INFO  - 2013-09-12 18:02:51.449; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/core.properties, adding to cores
+INFO  - 2013-09-12 18:02:51.449; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/core.properties, adding to cores
+INFO  - 2013-09-12 18:02:51.449; org.apache.solr.core.SolrCoreDiscoverer; Discovered properties file /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/core.properties, adding to cores
+INFO  - 2013-09-12 18:02:51.455; org.apache.solr.core.CoreContainer; New CoreContainer 1594691056
+INFO  - 2013-09-12 18:02:51.456; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2013-09-12 18:02:51.466; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2013-09-12 18:02:51.466; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - 2013-09-12 18:02:51.466; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2013-09-12 18:02:51.466; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2013-09-12 18:02:51.467; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2013-09-12 18:02:51.467; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2013-09-12 18:02:51.467; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2013-09-12 18:02:51.467; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2013-09-12 18:02:51.467; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2013-09-12 18:02:51.473; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2013-09-12 18:02:51.564; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2013-09-12 18:02:51.565; org.apache.solr.core.ZkContainer; Zookeeper client=127.0.0.1:2181
+INFO  - 2013-09-12 18:02:51.570; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=500&maxConnectionsPerHost=16&socketTimeout=0&connTimeout=0
+INFO  - 2013-09-12 18:02:51.598; org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+WARN  - 2013-09-12 18:02:51.610; org.apache.zookeeper.ClientCnxnSocket; Connected to an old server; r-o mode will be unavailable
+INFO  - 2013-09-12 18:02:51.612; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@36a6187e name:ZooKeeperConnection Watcher:127.0.0.1:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2013-09-12 18:02:51.612; org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2013-09-12 18:02:51.634; org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2013-09-12 18:02:52.653; org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.1.4:7574_solr
+INFO  - 2013-09-12 18:02:52.658; org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.1.4:7574_solr
+INFO  - 2013-09-12 18:02:52.666; org.apache.solr.common.cloud.ZkStateReader$3; Updating live nodes... (2)
+INFO  - 2013-09-12 18:02:52.689; org.apache.solr.cloud.ZkController; publishing core=store3 state=down
+INFO  - 2013-09-12 18:02:52.689; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:52.689; org.apache.solr.cloud.ZkController; publishing core=store2 state=down
+INFO  - 2013-09-12 18:02:52.689; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:52.690; org.apache.solr.cloud.ZkController; publishing core=store1 state=down
+INFO  - 2013-09-12 18:02:52.690; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:52.695; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 18:02:52.698; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 18:02:52.698; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 18:02:53.042; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-12 18:02:53.695; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store1
+INFO  - 2013-09-12 18:02:53.696; org.apache.solr.core.CoreContainer; Creating SolrCore 'store1' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1
+INFO  - 2013-09-12 18:02:53.696; org.apache.solr.cloud.ZkController; Check for collection zkNode:store1
+INFO  - 2013-09-12 18:02:53.698; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store3
+INFO  - 2013-09-12 18:02:53.698; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2013-09-12 18:02:53.698; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store2
+INFO  - 2013-09-12 18:02:53.698; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store1
+INFO  - 2013-09-12 18:02:53.698; org.apache.solr.core.CoreContainer; Creating SolrCore 'store3' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3
+INFO  - 2013-09-12 18:02:53.699; org.apache.solr.cloud.ZkController; Check for collection zkNode:store3
+INFO  - 2013-09-12 18:02:53.699; org.apache.solr.core.CoreContainer; Creating SolrCore 'store2' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2
+INFO  - 2013-09-12 18:02:53.700; org.apache.solr.cloud.ZkController; Check for collection zkNode:store2
+INFO  - 2013-09-12 18:02:53.700; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2013-09-12 18:02:53.700; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store3
+INFO  - 2013-09-12 18:02:53.701; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2013-09-12 18:02:53.701; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store2
+INFO  - 2013-09-12 18:02:53.701; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/'
+INFO  - 2013-09-12 18:02:53.703; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/'
+INFO  - 2013-09-12 18:02:53.703; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/'
+INFO  - 2013-09-12 18:02:53.876; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2013-09-12 18:02:53.882; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2013-09-12 18:02:53.911; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2013-09-12 18:02:53.912; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2013-09-12 18:02:53.914; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2013-09-12 18:02:53.916; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2013-09-12 18:02:53.989; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-09-12 18:02:53.996; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-09-12 18:02:53.997; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-09-12 18:02:53.997; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-09-12 18:02:53.998; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-09-12 18:02:53.998; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-09-12 18:02:54.015; org.apache.solr.schema.IndexSchema; [store2] Schema name=titanIndex
+INFO  - 2013-09-12 18:02:54.017; org.apache.solr.schema.IndexSchema; [store3] Schema name=titanIndex
+INFO  - 2013-09-12 18:02:54.022; org.apache.solr.schema.IndexSchema; [store1] Schema name=titanIndex
+INFO  - 2013-09-12 18:02:54.197; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2013-09-12 18:02:54.197; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2013-09-12 18:02:54.197; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2013-09-12 18:02:54.198; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2013-09-12 18:02:54.198; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2013-09-12 18:02:54.198; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2013-09-12 18:02:54.199; org.apache.solr.schema.IndexSchema; unique key field: document_id
+INFO  - 2013-09-12 18:02:54.199; org.apache.solr.schema.IndexSchema; unique key field: document_id
+INFO  - 2013-09-12 18:02:54.199; org.apache.solr.schema.IndexSchema; unique key field: document_id
+INFO  - 2013-09-12 18:02:54.268; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-09-12 18:02:54.268; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-09-12 18:02:54.268; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-09-12 18:02:54.276; org.apache.solr.core.SolrCore; [store1] Opening new SolrCore at /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/, dataDir=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data/
+INFO  - 2013-09-12 18:02:54.276; org.apache.solr.core.SolrCore; [store3] Opening new SolrCore at /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/, dataDir=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data/
+INFO  - 2013-09-12 18:02:54.276; org.apache.solr.core.SolrCore; [store2] Opening new SolrCore at /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/, dataDir=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data/
+INFO  - 2013-09-12 18:02:54.277; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2013-09-12 18:02:54.277; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2013-09-12 18:02:54.277; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2013-09-12 18:02:54.282; org.apache.solr.core.SolrCore; [store1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-09-12 18:02:54.282; org.apache.solr.core.SolrCore; [store1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-09-12 18:02:54.283; org.apache.solr.core.SolrCore; [store2] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-09-12 18:02:54.283; org.apache.solr.core.SolrCore; [store2] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-09-12 18:02:54.283; org.apache.solr.core.SolrCore; [store3] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-09-12 18:02:54.283; org.apache.solr.core.SolrCore; [store3] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-09-12 18:02:54.294; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data
+INFO  - 2013-09-12 18:02:54.294; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data
+INFO  - 2013-09-12 18:02:54.294; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data
+INFO  - 2013-09-12 18:02:54.295; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data/index/
+INFO  - 2013-09-12 18:02:54.295; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data/index/
+INFO  - 2013-09-12 18:02:54.295; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data/index/
+INFO  - 2013-09-12 18:02:54.295; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data/index
+INFO  - 2013-09-12 18:02:54.295; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data/index
+INFO  - 2013-09-12 18:02:54.295; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data/index
+INFO  - 2013-09-12 18:02:54.304; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-09-12 18:02:54.304; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.305; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.309; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-09-12 18:02:54.309; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-09-12 18:02:54.309; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-09-12 18:02:54.310; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-09-12 18:02:54.309; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-09-12 18:02:54.310; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-09-12 18:02:54.394; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.394; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.395; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.395; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.395; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.395; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.396; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-09-12 18:02:54.396; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.397; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-09-12 18:02:54.397; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.397; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-09-12 18:02:54.397; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.399; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.399; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.400; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.400; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.401; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.401; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.403; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.404; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.405; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.405; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.405; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.405; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.405; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.407; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-09-12 18:02:54.407; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-09-12 18:02:54.408; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-09-12 18:02:54.409; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-09-12 18:02:54.409; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-09-12 18:02:54.409; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-09-12 18:02:54.411; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-09-12 18:02:54.411; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-09-12 18:02:54.411; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-09-12 18:02:54.419; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-09-12 18:02:54.419; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-09-12 18:02:54.419; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-09-12 18:02:54.419; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.419; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.420; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.419; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.420; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.420; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.420; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.420; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.420; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.422; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.421; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.422; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.422; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.422; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.423; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.422; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.423; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.423; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.435; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.435; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.435; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.438; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.438; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.438; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.439; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.439; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.439; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.456; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@766fef4d main
+INFO  - 2013-09-12 18:02:54.456; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4589f114 main
+INFO  - 2013-09-12 18:02:54.456; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@2ec7e4fa main
+INFO  - 2013-09-12 18:02:54.470; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-09-12 18:02:54.470; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-09-12 18:02:54.470; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-09-12 18:02:54.470; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-09-12 18:02:54.470; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-09-12 18:02:54.471; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-09-12 18:02:54.471; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-09-12 18:02:54.471; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-09-12 18:02:54.471; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-09-12 18:02:54.479; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-09-12 18:02:54.479; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-09-12 18:02:54.479; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-09-12 18:02:54.486; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-09-12 18:02:54.486; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-09-12 18:02:54.486; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-09-12 18:02:54.488; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store1
+INFO  - 2013-09-12 18:02:54.488; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store2
+INFO  - 2013-09-12 18:02:54.488; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store3
+INFO  - 2013-09-12 18:02:54.508; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-09-12 18:02:54.508; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-09-12 18:02:54.508; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.core.CoreContainer; registering core: store1
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@766fef4d main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@2ec7e4fa main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.core.CoreContainer; registering core: store3
+INFO  - 2013-09-12 18:02:54.510; org.apache.solr.cloud.ZkController; Register replica - core:store3 address:http://192.168.1.4:7574/solr collection:store3 shard:shard2
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.cloud.ZkController; Register replica - core:store1 address:http://192.168.1.4:7574/solr collection:store1 shard:shard2
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.core.CoreContainer; registering core: store2
+INFO  - 2013-09-12 18:02:54.509; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@4589f114 main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-09-12 18:02:54.510; org.apache.solr.cloud.ZkController; Register replica - core:store2 address:http://192.168.1.4:7574/solr collection:store2 shard:shard2
+INFO  - 2013-09-12 18:02:54.512; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-12 18:02:54.512; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-12 18:02:54.512; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-12 18:02:54.517; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store1/leader_elect/shard2/election
+INFO  - 2013-09-12 18:02:54.517; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store3/leader_elect/shard2/election
+INFO  - 2013-09-12 18:02:54.517; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store2/leader_elect/shard2/election
+INFO  - 2013-09-12 18:02:54.537; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2013-09-12 18:02:54.540; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2013-09-12 18:02:54.543; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.core.SolrCore; [store1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=37 
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.core.SolrCore; [store2] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=37 
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.core.SolrCore; [store3] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=37 
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-09-12 18:02:54.550; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-09-12 18:02:54.549; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:54.550; org.apache.solr.core.SolrCore; [store1] Registered new searcher Searcher@766fef4d main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-09-12 18:02:54.550; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-09-12 18:02:54.550; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-09-12 18:02:54.550; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-09-12 18:02:54.550; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-09-12 18:02:54.551; org.apache.solr.core.SolrCore; [store2] Registered new searcher Searcher@4589f114 main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-09-12 18:02:54.551; org.apache.solr.core.SolrCore; [store3] Registered new searcher Searcher@2ec7e4fa main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-09-12 18:02:54.557; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2013-09-12 18:02:54.557; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2013-09-12 18:02:54.558; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store1/
+INFO  - 2013-09-12 18:02:54.558; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-12 18:02:54.558; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store1/ has no replicas
+INFO  - 2013-09-12 18:02:54.558; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store1/ shard2
+INFO  - 2013-09-12 18:02:54.558; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store1/leaders/shard2
+INFO  - 2013-09-12 18:02:54.560; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2013-09-12 18:02:54.560; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2013-09-12 18:02:54.561; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store3/
+INFO  - 2013-09-12 18:02:54.561; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2013-09-12 18:02:54.561; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-12 18:02:54.561; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2013-09-12 18:02:54.562; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store3/ has no replicas
+INFO  - 2013-09-12 18:02:54.562; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store2/
+INFO  - 2013-09-12 18:02:54.562; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store3/ shard2
+INFO  - 2013-09-12 18:02:54.562; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-12 18:02:54.562; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store3/leaders/shard2
+INFO  - 2013-09-12 18:02:54.562; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store2/ has no replicas
+INFO  - 2013-09-12 18:02:54.563; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store2/ shard2
+INFO  - 2013-09-12 18:02:54.563; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store2/leaders/shard2
+INFO  - 2013-09-12 18:02:54.652; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-12 18:02:54.689; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store1/ and leader is http://192.168.1.4:7574/solr/store1/
+INFO  - 2013-09-12 18:02:54.690; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store1 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-12 18:02:54.690; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2013-09-12 18:02:54.690; org.apache.solr.cloud.ZkController; publishing core=store1 state=active
+INFO  - 2013-09-12 18:02:54.690; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:54.695; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-12 18:02:54.697; org.apache.solr.cloud.ZkController; publishing core=store state=down
+INFO  - 2013-09-12 18:02:54.697; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:54.701; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 18:02:54.701; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for store
+INFO  - 2013-09-12 18:02:54.701; org.apache.solr.core.CoreContainer; Creating SolrCore 'store' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store
+INFO  - 2013-09-12 18:02:54.701; org.apache.solr.cloud.ZkController; Check for collection zkNode:store
+INFO  - 2013-09-12 18:02:54.702; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2013-09-12 18:02:54.702; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store
+INFO  - 2013-09-12 18:02:54.703; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/'
+INFO  - 2013-09-12 18:02:54.707; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store3/ and leader is http://192.168.1.4:7574/solr/store3/
+INFO  - 2013-09-12 18:02:54.707; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store3 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-12 18:02:54.707; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2013-09-12 18:02:54.708; org.apache.solr.cloud.ZkController; publishing core=store3 state=active
+INFO  - 2013-09-12 18:02:54.708; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:54.707; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store2/ and leader is http://192.168.1.4:7574/solr/store2/
+INFO  - 2013-09-12 18:02:54.708; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store2 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-12 18:02:54.708; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2013-09-12 18:02:54.708; org.apache.solr.cloud.ZkController; publishing core=store2 state=active
+INFO  - 2013-09-12 18:02:54.708; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:54.727; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-12 18:02:54.729; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down
+INFO  - 2013-09-12 18:02:54.730; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:54.730; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-12 18:02:54.733; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2013-09-12 18:02:54.734; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for collection1
+INFO  - 2013-09-12 18:02:54.734; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1
+INFO  - 2013-09-12 18:02:54.734; org.apache.solr.cloud.ZkController; Check for collection zkNode:collection1
+INFO  - 2013-09-12 18:02:54.735; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2013-09-12 18:02:54.735; org.apache.solr.cloud.ZkController; Load collection config from:/collections/collection1
+INFO  - 2013-09-12 18:02:54.736; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/'
+INFO  - 2013-09-12 18:02:54.771; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2013-09-12 18:02:54.773; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/jempbox-1.8.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.773; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.774; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/poi-ooxml-3.9.jar' to classloader
+INFO  - 2013-09-12 18:02:54.774; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2013-09-12 18:02:54.774; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.774; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.774; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.774; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.775; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/pdfbox-1.8.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.775; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2013-09-12 18:02:54.775; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2013-09-12 18:02:54.775; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2013-09-12 18:02:54.775; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.775; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/tika-parsers-1.4.jar' to classloader
+INFO  - 2013-09-12 18:02:54.776; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.776; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/fontbox-1.8.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.776; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.776; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2013-09-12 18:02:54.776; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/poi-3.9.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/poi-ooxml-schemas-3.9.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/poi-scratchpad-3.9.jar' to classloader
+INFO  - 2013-09-12 18:02:54.777; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.778; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.778; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/tika-core-1.4.jar' to classloader
+INFO  - 2013-09-12 18:02:54.778; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2013-09-12 18:02:54.779; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/dist/solr-cell-4.4.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.779; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.779; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2013-09-12 18:02:54.780; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - 2013-09-12 18:02:54.781; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/dist/solr-clustering-4.4.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.782; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2013-09-12 18:02:54.782; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2013-09-12 18:02:54.782; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/dist/solr-langid-4.4.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.783; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2013-09-12 18:02:54.783; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2013-09-12 18:02:54.783; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2013-09-12 18:02:54.783; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.783; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.784; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/dist/solr-velocity-4.4.0.jar' to classloader
+INFO  - 2013-09-12 18:02:54.819; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2013-09-12 18:02:54.821; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2013-09-12 18:02:54.848; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-09-12 18:02:54.849; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-09-12 18:02:54.864; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-09-12 18:02:54.866; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-09-12 18:02:54.867; org.apache.solr.schema.IndexSchema; [store] Schema name=titanIndex
+INFO  - 2013-09-12 18:02:54.909; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+INFO  - 2013-09-12 18:02:54.957; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2013-09-12 18:02:54.958; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2013-09-12 18:02:54.959; org.apache.solr.schema.IndexSchema; unique key field: document_id
+INFO  - 2013-09-12 18:02:54.981; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-09-12 18:02:54.982; org.apache.solr.core.SolrCore; [store] Opening new SolrCore at /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/, dataDir=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/
+INFO  - 2013-09-12 18:02:54.982; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2013-09-12 18:02:54.982; org.apache.solr.core.SolrCore; [store] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-09-12 18:02:54.982; org.apache.solr.core.SolrCore; [store] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-09-12 18:02:54.983; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data
+INFO  - 2013-09-12 18:02:54.983; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index/
+INFO  - 2013-09-12 18:02:54.984; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index
+INFO  - 2013-09-12 18:02:54.984; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-09-12 18:02:54.984; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.984; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:54.985; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-09-12 18:02:54.985; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-09-12 18:02:54.986; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.986; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.987; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-09-12 18:02:54.987; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.987; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.988; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-09-12 18:02:54.988; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-09-12 18:02:54.988; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.988; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:54.988; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.989; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.989; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.989; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:54.989; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-09-12 18:02:54.989; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-09-12 18:02:54.990; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-09-12 18:02:54.990; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-09-12 18:02:54.990; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.991; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.991; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.991; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.991; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.991; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.992; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.992; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-09-12 18:02:54.993; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.993; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.994; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:54.998; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@482f32d8 main
+INFO  - 2013-09-12 18:02:55.011; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-09-12 18:02:55.012; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-09-12 18:02:55.012; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-09-12 18:02:55.012; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-09-12 18:02:55.013; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-09-12 18:02:55.013; org.apache.solr.cloud.ZkController; Load collection config from:/collections/store
+INFO  - 2013-09-12 18:02:55.018; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-09-12 18:02:55.018; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@482f32d8 main{StandardDirectoryReader(segments_13:145)}
+INFO  - 2013-09-12 18:02:55.018; org.apache.solr.core.CoreContainer; registering core: store
+INFO  - 2013-09-12 18:02:55.019; org.apache.solr.cloud.ZkController; Register replica - core:store address:http://192.168.1.4:7574/solr collection:store shard:shard1
+INFO  - 2013-09-12 18:02:55.019; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-12 18:02:55.020; org.apache.solr.core.SolrCore; [store] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=1 
+INFO  - 2013-09-12 18:02:55.020; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:55.020; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-09-12 18:02:55.020; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-09-12 18:02:55.021; org.apache.solr.core.SolrCore; [store] Registered new searcher Searcher@482f32d8 main{StandardDirectoryReader(segments_13:145)}
+INFO  - 2013-09-12 18:02:55.029; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store/ and leader is http://192.168.1.4:8983/solr/store/
+INFO  - 2013-09-12 18:02:55.029; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-12 18:02:55.029; org.apache.solr.cloud.ZkController; Core needs to recover:store
+INFO  - 2013-09-12 18:02:55.029; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2013-09-12 18:02:55.031; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=store recoveringAfterStartup=true
+INFO  - 2013-09-12 18:02:55.032; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-12 18:02:55.034; org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[-1445531600134602752, -1445531600120971264, -1445531600104194048, -1445531600047570944, 1445531592629944320, 1445531585375895552, 1445531584450002944, -1445531569118773248, -1445531569099898880, -1445531569088364544]
+INFO  - 2013-09-12 18:02:55.034; org.apache.solr.cloud.ZkController; publishing core=store state=recovering
+INFO  - 2013-09-12 18:02:55.034; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:55.041; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+INFO  - 2013-09-12 18:02:55.273; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2013-09-12 18:02:55.308; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2013-09-12 18:02:55.314; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2013-09-12 18:02:55.425; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-09-12 18:02:55.425; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/, dataDir=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/
+INFO  - 2013-09-12 18:02:55.425; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2013-09-12 18:02:55.425; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-09-12 18:02:55.426; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-09-12 18:02:55.426; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data
+INFO  - 2013-09-12 18:02:55.426; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/index/
+INFO  - 2013-09-12 18:02:55.427; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/index
+INFO  - 2013-09-12 18:02:55.427; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-09-12 18:02:55.427; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:55.427; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-09-12 18:02:55.427; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-09-12 18:02:55.427; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-09-12 18:02:55.428; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.428; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.429; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-09-12 18:02:55.429; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.429; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-09-12 18:02:55.429; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-09-12 18:02:55.429; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-09-12 18:02:55.430; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.431; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.432; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.432; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.432; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.432; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-09-12 18:02:55.433; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:55.433; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:55.434; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-09-12 18:02:55.466; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@cb1e99b main
+INFO  - 2013-09-12 18:02:55.468; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-09-12 18:02:55.469; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-09-12 18:02:55.469; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-09-12 18:02:55.469; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-09-12 18:02:55.469; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-09-12 18:02:55.470; org.apache.solr.cloud.ZkController; Load collection config from:/collections/collection1
+INFO  - 2013-09-12 18:02:55.472; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-09-12 18:02:55.473; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2013-09-12 18:02:55.473; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@cb1e99b main{StandardDirectoryReader(segments_4:7 _0(4.4):C1 _1(4.4):C1 _2(4.4):C3)}
+INFO  - 2013-09-12 18:02:55.473; org.apache.solr.cloud.ZkController; Register replica - core:collection1 address:http://192.168.1.4:7574/solr collection:collection1 shard:shard1
+INFO  - 2013-09-12 18:02:55.473; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-12 18:02:55.485; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/collection1/ and leader is http://192.168.1.4:8983/solr/collection1/
+INFO  - 2013-09-12 18:02:55.486; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=1 status=0 QTime=13 
+INFO  - 2013-09-12 18:02:55.486; org.apache.solr.cloud.ZkController; No LogReplay needed for core=collection1 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-12 18:02:55.486; org.apache.solr.cloud.ZkController; Core needs to recover:collection1
+INFO  - 2013-09-12 18:02:55.486; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2013-09-12 18:02:55.487; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=collection1 recoveringAfterStartup=true
+INFO  - 2013-09-12 18:02:55.487; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-12 18:02:55.488; org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[1445530647214948352, 1445530647210754048, 1445530647202365440, 1445530637052149760, 1445530619152957440]
+INFO  - 2013-09-12 18:02:55.488; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering
+INFO  - 2013-09-12 18:02:55.488; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:55.491; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2
+INFO  - 2013-09-12 18:02:55.492; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:55.492; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-09-12 18:02:55.492; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2013-09-12 18:02:55.492; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+INFO  - 2013-09-12 18:02:55.492; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-09-12 18:02:55.493; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@cb1e99b main{StandardDirectoryReader(segments_4:7 _0(4.4):C1 _1(4.4):C1 _2(4.4):C3)}
+INFO  - 2013-09-12 18:02:55.514; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:7574
+INFO  - 2013-09-12 18:02:56.251; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-12 18:02:58.512; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.1.4:8983/solr/collection1/ core=collection1 - recoveringAfterStartup=true
+INFO  - 2013-09-12 18:02:58.515; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-12 18:02:58.520; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr START replicas=[http://192.168.1.4:8983/solr/collection1/] nUpdates=100
+INFO  - 2013-09-12 18:02:58.532; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr  Received 5 versions from 192.168.1.4:8983/solr/collection1/
+INFO  - 2013-09-12 18:02:58.532; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr  Our versions are newer. ourLowThreshold=1445530619152957440 otherHigh=1445530647210754048
+INFO  - 2013-09-12 18:02:58.532; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr DONE. sync succeeded
+INFO  - 2013-09-12 18:02:58.533; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2013-09-12 18:02:58.583; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@4768fcbe; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4}
+INFO  - 2013-09-12 18:02:58.585; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 4
+INFO  - 2013-09-12 18:02:58.586; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2013-09-12 18:02:58.604; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@14c7838f main
+INFO  - 2013-09-12 18:02:58.608; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@14c7838f main{StandardDirectoryReader(segments_4:7:nrt _0(4.4):C1 _1(4.4):C1 _2(4.4):C3)}
+INFO  - 2013-09-12 18:02:58.608; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:58.608; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2013-09-12 18:02:58.608; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@14c7838f main{StandardDirectoryReader(segments_4:7:nrt _0(4.4):C1 _1(4.4):C1 _2(4.4):C3)}
+INFO  - 2013-09-12 18:02:58.611; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=collection1
+INFO  - 2013-09-12 18:02:58.611; org.apache.solr.cloud.ZkController; publishing core=collection1 state=active
+INFO  - 2013-09-12 18:02:58.611; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:59.120; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.1.4:8983/solr/store/ core=store - recoveringAfterStartup=true
+INFO  - 2013-09-12 18:02:59.120; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr START replicas=[http://192.168.1.4:8983/solr/store/] nUpdates=100
+INFO  - 2013-09-12 18:02:59.130; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr  Received 10 versions from 192.168.1.4:8983/solr/store/
+INFO  - 2013-09-12 18:02:59.130; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr Requesting updates from 192.168.1.4:8983/solr/store/n=10 versions=[-1445531600136699904, -1445531600118874112, -1445531600102096896, -1445531600042328064, 1445531595206295552, 1445531594080124928, 1445531593928081408, 1445531593846292480, -1445531593824272384, 1445531591588708352]
+INFO  - 2013-09-12 18:02:59.146; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1b0d6024; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_13,generation=39}
+INFO  - 2013-09-12 18:02:59.147; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 39
+INFO  - 2013-09-12 18:02:59.147; org.apache.solr.update.DirectUpdateHandler2; Reordered DBQs detected.  Update=add{flags=c,_version_=1445531591588708352,id=doc1} DBQs=[DBQ{version=1445531600134602752,q=*:*}, DBQ{version=1445531600120971264,q=*:*}, DBQ{version=1445531600104194048,q=*:*}, DBQ{version=1445531600047570944,q=*:*}]
+INFO  - 2013-09-12 18:02:59.176; org.apache.solr.schema.AbstractSpatialPrefixTreeFieldType; geo{class=org.apache.solr.schema.SpatialRecursivePrefixTreeFieldType,analyzer=org.apache.solr.schema.FieldType$DefaultAnalyzer,args={distErrPct=0.000, spatialContextFactory=com.spatial4j.core.context.jts.JtsSpatialContextFactory, class=solr.SpatialRecursivePrefixTreeFieldType, maxDistErr=0.000009, units=degrees, prefixTree=geohash}} strat: RecursivePrefixTreeStrategy(prefixGridScanLevel:7,SPG:(GeohashPrefixTree(maxLevels:11,ctx:JtsSpatialContext{geo=true, calculator=Haversine, worldBounds=Rect(minX=-180.0,maxX=180.0,minY=-90.0,maxY=90.0)}))) maxLevels: 11
+INFO  - 2013-09-12 18:02:59.208; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@113f3c3e realtime
+INFO  - 2013-09-12 18:02:59.208; org.apache.solr.update.DirectUpdateHandler2; Reordered DBQs detected.  Update=add{flags=c,_version_=1445531593846292480,id=doc3} DBQs=[DBQ{version=1445531600134602752,q=*:*}, DBQ{version=1445531600120971264,q=*:*}, DBQ{version=1445531600104194048,q=*:*}, DBQ{version=1445531600047570944,q=*:*}]
+INFO  - 2013-09-12 18:02:59.213; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7dac363c realtime
+INFO  - 2013-09-12 18:02:59.213; org.apache.solr.update.DirectUpdateHandler2; Reordered DBQs detected.  Update=add{flags=c,_version_=1445531593928081408,id=doc3} DBQs=[DBQ{version=1445531600134602752,q=*:*}, DBQ{version=1445531600120971264,q=*:*}, DBQ{version=1445531600104194048,q=*:*}, DBQ{version=1445531600047570944,q=*:*}]
+INFO  - 2013-09-12 18:02:59.217; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@158c6357 realtime
+INFO  - 2013-09-12 18:02:59.218; org.apache.solr.update.DirectUpdateHandler2; Reordered DBQs detected.  Update=add{flags=c,_version_=1445531594080124928,id=doc1} DBQs=[DBQ{version=1445531600134602752,q=*:*}, DBQ{version=1445531600120971264,q=*:*}, DBQ{version=1445531600104194048,q=*:*}, DBQ{version=1445531600047570944,q=*:*}]
+INFO  - 2013-09-12 18:02:59.222; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@55a75e1e realtime
+INFO  - 2013-09-12 18:02:59.223; org.apache.solr.update.DirectUpdateHandler2; Reordered DBQs detected.  Update=add{flags=c,_version_=1445531595206295552,id=doc1} DBQs=[DBQ{version=1445531600134602752,q=*:*}, DBQ{version=1445531600120971264,q=*:*}, DBQ{version=1445531600104194048,q=*:*}, DBQ{version=1445531600047570944,q=*:*}]
+INFO  - 2013-09-12 18:02:59.227; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@30aee2b8 realtime
+INFO  - 2013-09-12 18:02:59.229; org.apache.solr.update.processor.LogUpdateProcessor; [store] {add=[doc1 (1445531591588708352), doc3 (1445531593846292480), doc3 (1445531593928081408), doc1 (1445531594080124928), doc1 (1445531595206295552)],delete=[doc2 (-1445531593824272384)],deleteByQuery=*:* (-1445531600042328064),deleteByQuery=*:* (-1445531600102096896),deleteByQuery=*:* (-1445531600118874112),deleteByQuery=*:* (-1445531600136699904)} 0 91
+INFO  - 2013-09-12 18:02:59.229; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr DONE. sync succeeded
+INFO  - 2013-09-12 18:02:59.230; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2013-09-12 18:02:59.252; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1b0d6024; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_13,generation=39}
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1b0d6024; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_14,generation=40}
+INFO  - 2013-09-12 18:02:59.253; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 40
+INFO  - 2013-09-12 18:02:59.253; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5533ab09 main
+INFO  - 2013-09-12 18:02:59.254; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@5533ab09 main{StandardDirectoryReader(segments_13:165:nrt)}
+INFO  - 2013-09-12 18:02:59.254; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2013-09-12 18:02:59.254; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-12 18:02:59.254; org.apache.solr.core.SolrCore; [store] Registered new searcher Searcher@5533ab09 main{StandardDirectoryReader(segments_13:165:nrt)}
+INFO  - 2013-09-12 18:02:59.254; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=store
+INFO  - 2013-09-12 18:02:59.255; org.apache.solr.cloud.ZkController; publishing core=store state=active
+INFO  - 2013-09-12 18:02:59.255; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-12 18:02:59.305; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
