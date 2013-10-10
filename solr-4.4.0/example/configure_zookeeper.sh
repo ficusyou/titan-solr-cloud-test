@@ -6,18 +6,11 @@ echo "Configuring Zookeeper with sample collections"
 ./2-link_collection1_to_zk.sh
 echo "collection1 collection loaded"
 
-./1-upload_store_to_zk.sh
-./2-link_store_to_zk.sh
-echo "store collection loaded"
+./1-upload_edge_to_zk.sh
+./2-link_edge_to_zk.sh
+echo "edge collection loaded"
 
-./1-upload_store1_to_zk.sh
-./1-upload_store1_to_zk.sh
-echo "store1 collection loaded"
+./1-upload_vertex_to_zk.sh
+./1-upload_vertex_to_zk.sh
+echo "vertex collection loaded"
 
-./1-upload_store2_to_zk.sh
-./1-upload_store2_to_zk.sh
-echo "store2 collection loaded"
-
-./1-upload_store3_to_zk.sh
-./1-upload_store3_to_zk.sh
-echo "store3 collection loaded"
