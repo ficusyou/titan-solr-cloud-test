@@ -37,16 +37,12 @@ drwxr-xr-x 18 jholmberg jholmberg  4096 Sep 12 18:01 .
 drwxr-xr-x  8 jholmberg jholmberg  4096 Sep  7 11:34 ..
 -rw-------  1 jholmberg jholmberg    59 Sep  7 11:34 .directory
 -rwxr-xr-x  1 jholmberg jholmberg   101 Sep  7 11:34 1-upload_collection1_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg    91 Sep  7 11:34 1-upload_store1_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg    91 Sep  7 11:34 1-upload_store2_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg    91 Sep  7 11:34 1-upload_store3_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg    92 Sep  7 11:34 1-upload_store_to_zk.sh
+-rwxr-xr-x  1 jholmberg jholmberg    91 Sep  7 11:34 1-upload_edge_to_zk.sh
+-rwxr-xr-x  1 jholmberg jholmberg    91 Sep  7 11:34 1-upload_vertex_to_zk.sh
 -rwxr-xr-x  1 jholmberg jholmberg   123 Sep  7 11:34 2-link_collection1_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg   113 Sep  7 11:34 2-link_store1_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg   113 Sep  7 11:34 2-link_store2_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg   113 Sep  7 11:34 2-link_store3_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg   114 Sep  7 11:34 2-link_store_to_zk.sh
--rwxr-xr-x  1 jholmberg jholmberg    76 Sep  7 11:34 3-boostrap_store.sh
+-rwxr-xr-x  1 jholmberg jholmberg   113 Sep  7 11:34 2-link_edge_to_zk.sh
+-rwxr-xr-x  1 jholmberg jholmberg   113 Sep  7 11:34 2-link_vertex_to_zk.sh
+-rwxr-xr-x  1 jholmberg jholmberg    76 Sep  7 11:34 3-boostrap_cloud.sh
 -rw-r--r--  1 jholmberg jholmberg  2992 Sep  7 11:34 README.txt
 drwxr-xr-x  4 jholmberg jholmberg  4096 Sep  7 11:34 SOLR-INDEXING
 drwxr-xr-x  4 jholmberg jholmberg  4096 Sep  7 11:34 back-up-for-webapps
@@ -99,11 +95,9 @@ drwxr-xr-x 18 jholmberg jholmberg 4096 Sep  7 15:37 ..
 -rw-r--r--  1 jholmberg jholmberg 2473 Sep  7 11:34 README.txt
 drwxr-xr-x  2 jholmberg jholmberg 4096 Sep  7 11:34 bin
 drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 collection1
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 edge
 -rw-r--r--  1 jholmberg jholmberg 1754 Sep  7 11:34 solr.xml
-drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store
-drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store1
-drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store2
-drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 store3
+drwxr-xr-x  4 jholmberg jholmberg 4096 Sep  7 11:34 vertex
 ```
 Each index (or core as Solr calls them) reside in their own directory in store, store1, store2, and store3, respectively.
 
